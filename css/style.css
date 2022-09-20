@@ -1,0 +1,54 @@
+@import url(colors.css);
+@import url(home.css);
+@import url(about-us.css);
+@import url(services.css);
+@import url(appointment.css);
+@import url(gallery.css);
+@import url(location.css);
+@import url(footer.css);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  font-family: var(--font);
+  background-color: black;
+}
+
+.back-to-main-menu_container {
+  background-image: linear-gradient(to bottom, #fc703e, var(--brown));
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  z-index: 3;
+  border-radius: 3px;
+}
+
+.back-to-main-menu {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.back-to-main-menu:hover {
+  /* box-shadow: inset 0 0 56px rgba(255, 255, 255, 0.188); */
+  background-image: linear-gradient(to bottom, #f8946f, #553214);
+}
+
+.back-to-main-menu:active {
+  background-image: linear-gradient(to bottom, #dc6539 100%, #fc703e );
+  box-shadow:
+    inset 0 0 10px var(--dark-brown);
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,400;0,700;0,800;0,900;1,100;1,400;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-light: #F5EEE6ff;
+  --beige: #DBC5AFff;
+  --primary-dark: #907758ff;
+  --gray: #929292;
+  --brown: #522905;
+  --dark-brown: #2D2828ff;
+  --dark-gray: #1b1b1b;
+  --font: 'Urbanist', sans-serif;
+}
+
+
+

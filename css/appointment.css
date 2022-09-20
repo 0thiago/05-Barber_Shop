@@ -1,0 +1,130 @@
+.appointment {
+  position: relative;
+  height: 100vh;
+  background-color: var(--primary-dark);
+  color: white;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+
+.appointment__title {
+  padding-top: 80px;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.appointment__moustache-icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointment__form-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 0 auto;
+  width: 90%;
+  max-width: 1050px;
+}
+
+.appointment__form-inputs_container {
+  position: relative;
+  width: 24%;
+  text-align: left;
+}
+
+.appointment__input-labels {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.appointment__inputs {
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  text-indent: 5px;
+  width: 85%;
+}
+
+.appointment__form-inputs_container select {
+  width: 100%;
+}
+
+input+span {
+  display: inline;
+  padding-right: 30px;
+  width: 0rem;
+}
+
+input:invalid+span:after {
+  position: absolute;
+  top: 12.5px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  content: '✖';
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+input:valid+span:after {
+  position: absolute;
+  top: 12.5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+  content: '✓';
+  padding-left: 10px;
+  padding-top: 10px;  
+}
+
+.appointment__form-msg_container {
+  text-align: left;
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.appointment__msg-label {
+  text-align: left;
+  display: block;
+  margin: 20px 0 5px 0;
+}
+
+.appointment__form-msg {
+  margin: 0 auto 10px;
+  height: 100px;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 3px;
+}
+
+.appointment__form-send_button {
+  background-color: var(--brown);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.appointment__form-send_button:hover {
+  cursor: pointer;
+  background-color: var(--brown);
+  box-shadow: inset 0 0 5px black;
+}
+
+.appointment__form-send_button:active {
+  background-color: var(--gray);
+  color: var(--dark-gray);
+}
+
+.appointment__chair-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
